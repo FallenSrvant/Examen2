@@ -6,7 +6,3 @@ from .models import ToDO
 class ToDOView(viewsets.ModelViewSet):
     serializer_class = toDOSerializer
     queryset = ToDO.objects.all()
-
-class ToDOIdListAPIView(generics.ListAPIView):
-    queryset = ToDO.objects.all()
-    serializer_class = ToDOIdSerializer
