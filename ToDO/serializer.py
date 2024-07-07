@@ -6,9 +6,3 @@ class toDOSerializer(serializers.ModelSerializer):
         model = ToDO
         # fields = ('id','title','description','done')
         fields = '__all__'
-
-
-class ToDOIdSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = ToDO
-        fields = ['id']
