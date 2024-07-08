@@ -11,6 +11,7 @@ export function ToDOCard({ ToDO }) {
             }}
         >
             <h1 className="font-bold uppercase">{ToDO.title}</h1>
+            <p className='text-slate-50'>{ToDO.id}</p>
             <p className="text-slate-50">{ToDO.description}</p>
             <p className="text-slate-50">{ToDO.done ? 'Done' : 'Pending'}</p>
             <hr />
